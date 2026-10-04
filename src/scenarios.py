@@ -136,7 +136,47 @@ _SCENARIOS: Dict[str, Tuple[List[Cone], CarPose]] = {
         [Cone(x=0.0, y=2.0, color=0)],
         CarPose(x=0.0, y=0.0, yaw=1.8),
     ),
+
+    # Part 2 Scenarios: 3 cones on one side of the track
+    "21": (
+        [
+            Cone(x=1.0, y=3.0, color=1),
+            Cone(x=3.0, y=4.0, color=1),
+            Cone(x=5.0, y=6.0, color=1),
+            Cone(x=1.0, y=1.0, color=0),
+        ],
+        CarPose(x=0.0, y=0.0, yaw=0.5),
+    ),
+
+    "22": (
+        [
+            Cone(x=1.0, y=3.0, color=1),
+            Cone(x=1.0, y=1.0, color=0),
+            Cone(x=3.0, y=1.0, color=0),
+            Cone(x=5.0, y=2.0, color=0),
+        ],
+        CarPose(x=0.0, y=0.0, yaw=0.2),
+    ),
+
+    "23": (
+        [
+            Cone(x=1.0, y=3.0, color=1),
+            Cone(x=3.0, y=3.5, color=1),
+            Cone(x=5.0, y=5.0, color=1),
+        ],
+        CarPose(x=0.0, y=0.0, yaw=0.4),
+    ),
+
+    "24": (
+        [
+            Cone(x=1.0, y=1.0, color=0),
+            Cone(x=3.0, y=1.5, color=0),
+            Cone(x=5.0, y=1.0, color=0),
+        ],
+        CarPose(x=0.0, y=0.0, yaw=0.1),
+    ),
 }
+
 
 
 def get_scenario_names() -> List[str]:
